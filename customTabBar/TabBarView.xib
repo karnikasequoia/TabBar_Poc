@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="WUh-K3-4oB" customClass="TabBarView" customModule="customTabBar" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="724" height="80"/>
+            <rect key="frame" x="0.0" y="0.0" width="450" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-9D-UxH" userLabel="Content View">
@@ -20,9 +20,6 @@
                         <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-KE-pa2">
                             <rect key="frame" x="0.0" y="0.0" width="450" height="83"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="450" id="LKg-Dl-h70"/>
-                            </constraints>
                             <items>
                                 <tabBarItem tag="1" title="Home" image="homeTabBar" id="kf1-o3-UDM">
                                     <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,6 +55,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="rxV-9D-UxH" firstAttribute="centerX" secondItem="WUh-K3-4oB" secondAttribute="centerX" id="ZAx-2U-S8K"/>
                 <constraint firstItem="rxV-9D-UxH" firstAttribute="trailing" secondItem="WUh-K3-4oB" secondAttribute="trailing" id="fqp-3B-sTB"/>
                 <constraint firstItem="rxV-9D-UxH" firstAttribute="top" secondItem="WUh-K3-4oB" secondAttribute="top" id="lTN-8l-GBN"/>
                 <constraint firstItem="rxV-9D-UxH" firstAttribute="bottom" secondItem="WUh-K3-4oB" secondAttribute="bottom" id="oxF-AD-myJ"/>
@@ -67,7 +65,7 @@
             <connections>
                 <outlet property="tabBar" destination="Y0s-KE-pa2" id="NOn-w3-bLy"/>
             </connections>
-            <point key="canvasLocation" x="723.07692307692309" y="-68.957345971563981"/>
+            <point key="canvasLocation" x="512.30769230769226" y="-68.957345971563981"/>
         </scrollView>
     </objects>
     <resources>
