@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,16 +20,7 @@
                         <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-KE-pa2">
                             <rect key="frame" x="0.0" y="0.0" width="450" height="83"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <items>
-                                <tabBarItem tag="1" title="Home" image="homeTabBar" id="kf1-o3-UDM">
-                                    <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </tabBarItem>
-                                <tabBarItem tag="2" title="Benefits" image="Benefits" id="jMC-yi-HCa"/>
-                                <tabBarItem tag="3" title="Workplace" image="workplaceTabBar" id="xTQ-Fg-xha"/>
-                                <tabBarItem tag="3" title="Workplace" image="workplaceTabBar" id="ygb-8T-KrL"/>
-                                <tabBarItem tag="4" title="Wellbeing" image="wellBeingTabBar" id="oJL-sK-OQj"/>
-                                <tabBarItem tag="5" title="Wellbeing1" image="newsFeedTabBar" id="mI8-0o-PJ8"/>
-                            </items>
+                            <items/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,11 +60,6 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="Benefits" width="18" height="18"/>
-        <image name="homeTabBar" width="18" height="18"/>
-        <image name="newsFeedTabBar" width="21" height="20"/>
-        <image name="wellBeingTabBar" width="18" height="18"/>
-        <image name="workplaceTabBar" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

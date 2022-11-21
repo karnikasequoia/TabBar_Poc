@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		1646A44B25A9AAC800C6408A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1646A44925A9AAC800C6408A /* Main.storyboard */; };
 		1646A44D25A9AACA00C6408A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1646A44C25A9AACA00C6408A /* Assets.xcassets */; };
 		1646A45025A9AACA00C6408A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1646A44E25A9AACA00C6408A /* LaunchScreen.storyboard */; };
-		F015EE3328F82ABE00986FE4 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F015EE3228F82ABE00986FE4 /* TabBarView.xib */; };
 		F015EE3728F924B700986FE4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015EE3628F924B700986FE4 /* TabBarView.swift */; };
 		F015EE3928F9777900986FE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015EE3828F9777900986FE4 /* HomeViewController.swift */; };
 		F015EE3B28F9778D00986FE4 /* BenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015EE3A28F9778D00986FE4 /* BenefitViewController.swift */; };
@@ -22,7 +21,41 @@
 		F015EE4128F977C600986FE4 /* WellBeingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015EE4028F977C600986FE4 /* WellBeingOneViewController.swift */; };
 		F015EE4328F977D600986FE4 /* WellBeingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015EE4228F977D600986FE4 /* WellBeingTwoViewController.swift */; };
 		F015EE4528FFC33200986FE4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015EE4428FFC33200986FE4 /* Extensions.swift */; };
+		F07509D02918BB9300A55E6F /* CompanyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509CC2918BB9200A55E6F /* CompanyDetails.swift */; };
+		F07509D12918BB9300A55E6F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509CD2918BB9200A55E6F /* Data.swift */; };
+		F07509D22918BB9300A55E6F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509CE2918BB9300A55E6F /* LoginResponse.swift */; };
+		F07509D32918BB9300A55E6F /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509CF2918BB9300A55E6F /* UserDetails.swift */; };
+		F07509D629213BEB00A55E6F /* CustomTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509D529213BEB00A55E6F /* CustomTabBarViewModel.swift */; };
+		F07509D82921617D00A55E6F /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509D72921617C00A55E6F /* TabBarModel.swift */; };
+		F07509DA2921E0C700A55E6F /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509D92921E0C700A55E6F /* CommonFunction.swift */; };
+		F07509DC2921F0A000A55E6F /* BenefitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509DB2921F0A000A55E6F /* BenefitTableViewCell.swift */; };
+		F07509DE2921F15500A55E6F /* FinanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509DD2921F15500A55E6F /* FinanceViewModel.swift */; };
+		F07509E02921F32500A55E6F /* FinancesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509DF2921F32500A55E6F /* FinancesModel.swift */; };
+		F07509E32923488C00A55E6F /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509E12923488C00A55E6F /* FinanceTableViewCell.swift */; };
+		F07509E42923488C00A55E6F /* FinanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07509E22923488C00A55E6F /* FinanceTableViewCell.xib */; };
+		F07509E72925DB3300A55E6F /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07509E62925DB3300A55E6F /* FinanceViewController.swift */; };
+		F09AB4DD2925DD02007F7A02 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09AB4DC2925DD02007F7A02 /* TabBarView.xib */; };
+		F09AB4DF2925E361007F7A02 /* FinanceViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB4DE2925E361007F7A02 /* FinanceViewModelTest.swift */; };
+		F09AB4E12925E92A007F7A02 /* MockFinanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB4E02925E92A007F7A02 /* MockFinanceViewModel.swift */; };
+		F09AB4E3292A969D007F7A02 /* FinanceViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB4E2292A969D007F7A02 /* FinanceViewModelProtocol.swift */; };
+		F09AB4E5292B0CFD007F7A02 /* CustomTabBarViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB4E4292B0CFD007F7A02 /* CustomTabBarViewModelProtocol.swift */; };
+		F09AB4E7292B0F85007F7A02 /* MockCustomTabbarApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB4E6292B0F85007F7A02 /* MockCustomTabbarApiClient.swift */; };
+		F09AB4E9292B1E00007F7A02 /* FinanceListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB4E8292B1E00007F7A02 /* FinanceListModel.swift */; };
+		F0B2AAA129120CC20011A075 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F0B2AAA029120CC20011A075 /* Alamofire */; };
+		F0B2AAAC29120D830011A075 /* customTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B2AAAB29120D830011A075 /* customTabBarTests.swift */; };
+		F0B2AAB4291212C60011A075 /* MockFoodReviewApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B2AAB3291212C60011A075 /* MockFoodReviewApiClient.swift */; };
+		F0B2AAB7291213710011A075 /* FoodReviewApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B2AAB6291213710011A075 /* FoodReviewApiClientProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0B2AAAD29120D830011A075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1646A43825A9AAC800C6408A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1646A43F25A9AAC800C6408A;
+			remoteInfo = customTabBar;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1646A44025A9AAC800C6408A /* customTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +66,6 @@
 		1646A44C25A9AACA00C6408A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1646A44F25A9AACA00C6408A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1646A45125A9AACA00C6408A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F015EE3228F82ABE00986FE4 /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
 		F015EE3628F924B700986FE4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F015EE3828F9777900986FE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F015EE3A28F9778D00986FE4 /* BenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitViewController.swift; sourceTree = "<group>"; };
@@ -42,10 +74,42 @@
 		F015EE4028F977C600986FE4 /* WellBeingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellBeingOneViewController.swift; sourceTree = "<group>"; };
 		F015EE4228F977D600986FE4 /* WellBeingTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellBeingTwoViewController.swift; sourceTree = "<group>"; };
 		F015EE4428FFC33200986FE4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F07509CC2918BB9200A55E6F /* CompanyDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetails.swift; sourceTree = "<group>"; };
+		F07509CD2918BB9200A55E6F /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F07509CE2918BB9300A55E6F /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F07509CF2918BB9300A55E6F /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		F07509D529213BEB00A55E6F /* CustomTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewModel.swift; sourceTree = "<group>"; };
+		F07509D72921617C00A55E6F /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		F07509D92921E0C700A55E6F /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
+		F07509DB2921F0A000A55E6F /* BenefitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitTableViewCell.swift; sourceTree = "<group>"; };
+		F07509DD2921F15500A55E6F /* FinanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewModel.swift; sourceTree = "<group>"; };
+		F07509DF2921F32500A55E6F /* FinancesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesModel.swift; sourceTree = "<group>"; };
+		F07509E12923488C00A55E6F /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
+		F07509E22923488C00A55E6F /* FinanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinanceTableViewCell.xib; sourceTree = "<group>"; };
+		F07509E62925DB3300A55E6F /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
+		F09AB4DC2925DD02007F7A02 /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		F09AB4DE2925E361007F7A02 /* FinanceViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewModelTest.swift; sourceTree = "<group>"; };
+		F09AB4E02925E92A007F7A02 /* MockFinanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFinanceViewModel.swift; sourceTree = "<group>"; };
+		F09AB4E2292A969D007F7A02 /* FinanceViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewModelProtocol.swift; sourceTree = "<group>"; };
+		F09AB4E4292B0CFD007F7A02 /* CustomTabBarViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewModelProtocol.swift; sourceTree = "<group>"; };
+		F09AB4E6292B0F85007F7A02 /* MockCustomTabbarApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCustomTabbarApiClient.swift; sourceTree = "<group>"; };
+		F09AB4E8292B1E00007F7A02 /* FinanceListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceListModel.swift; sourceTree = "<group>"; };
+		F0B2AAA929120D830011A075 /* customTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B2AAAB29120D830011A075 /* customTabBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarTests.swift; sourceTree = "<group>"; };
+		F0B2AAB3291212C60011A075 /* MockFoodReviewApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFoodReviewApiClient.swift; sourceTree = "<group>"; };
+		F0B2AAB6291213710011A075 /* FoodReviewApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReviewApiClientProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1646A43D25A9AAC800C6408A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B2AAA129120CC20011A075 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B2AAA629120D830011A075 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				1646A44225A9AAC800C6408A /* customTabBar */,
+				F0B2AAAA29120D830011A075 /* customTabBarTests */,
 				1646A44125A9AAC800C6408A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1646A44025A9AAC800C6408A /* customTabBar.app */,
+				F0B2AAA929120D830011A075 /* customTabBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,24 +140,117 @@
 		1646A44225A9AAC800C6408A /* customTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				F07509D429213BD100A55E6F /* View Model */,
+				F0B2AAB829121D490011A075 /* Models */,
+				F0B2AAB52912135A0011A075 /* Protocol */,
+				F0B2AAA229120CEF0011A075 /* Reusable */,
+				F0B2AAA429120D1E0011A075 /* Views */,
 				1646A44325A9AAC800C6408A /* AppDelegate.swift */,
 				1646A44525A9AAC800C6408A /* SceneDelegate.swift */,
-				1646A44725A9AAC800C6408A /* CustomTabBarViewController.swift */,
 				1646A44925A9AAC800C6408A /* Main.storyboard */,
 				1646A44C25A9AACA00C6408A /* Assets.xcassets */,
 				1646A44E25A9AACA00C6408A /* LaunchScreen.storyboard */,
 				1646A45125A9AACA00C6408A /* Info.plist */,
-				F015EE3228F82ABE00986FE4 /* TabBarView.xib */,
+			);
+			path = customTabBar;
+			sourceTree = "<group>";
+		};
+		F07509D429213BD100A55E6F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				F07509D529213BEB00A55E6F /* CustomTabBarViewModel.swift */,
+				F07509DD2921F15500A55E6F /* FinanceViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		F07509E52923489500A55E6F /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				F07509E62925DB3300A55E6F /* FinanceViewController.swift */,
+				F07509E12923488C00A55E6F /* FinanceTableViewCell.swift */,
+				F07509E22923488C00A55E6F /* FinanceTableViewCell.xib */,
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		F07509E82925DCB500A55E6F /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				1646A44725A9AAC800C6408A /* CustomTabBarViewController.swift */,
 				F015EE3628F924B700986FE4 /* TabBarView.swift */,
+				F09AB4DC2925DD02007F7A02 /* TabBarView.xib */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		F0B2AAA229120CEF0011A075 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				F015EE4428FFC33200986FE4 /* Extensions.swift */,
+				F07509D92921E0C700A55E6F /* CommonFunction.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		F0B2AAA429120D1E0011A075 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F07509E82925DCB500A55E6F /* Tab Bar */,
+				F07509E52923489500A55E6F /* Finance */,
 				F015EE3828F9777900986FE4 /* HomeViewController.swift */,
 				F015EE3A28F9778D00986FE4 /* BenefitViewController.swift */,
 				F015EE3C28F977A500986FE4 /* WorkPlaceViewController.swift */,
 				F015EE3E28F977B200986FE4 /* WellBeingViewController.swift */,
 				F015EE4028F977C600986FE4 /* WellBeingOneViewController.swift */,
 				F015EE4228F977D600986FE4 /* WellBeingTwoViewController.swift */,
-				F015EE4428FFC33200986FE4 /* Extensions.swift */,
+				F07509DB2921F0A000A55E6F /* BenefitTableViewCell.swift */,
 			);
-			path = customTabBar;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0B2AAAA29120D830011A075 /* customTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0B2AAB22912126C0011A075 /* Mocks */,
+				F0B2AAAB29120D830011A075 /* customTabBarTests.swift */,
+				F09AB4DE2925E361007F7A02 /* FinanceViewModelTest.swift */,
+			);
+			path = customTabBarTests;
+			sourceTree = "<group>";
+		};
+		F0B2AAB22912126C0011A075 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F0B2AAB3291212C60011A075 /* MockFoodReviewApiClient.swift */,
+				F09AB4E02925E92A007F7A02 /* MockFinanceViewModel.swift */,
+				F09AB4E6292B0F85007F7A02 /* MockCustomTabbarApiClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F0B2AAB52912135A0011A075 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F0B2AAB6291213710011A075 /* FoodReviewApiClientProtocol.swift */,
+				F09AB4E2292A969D007F7A02 /* FinanceViewModelProtocol.swift */,
+				F09AB4E4292B0CFD007F7A02 /* CustomTabBarViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F0B2AAB829121D490011A075 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F07509CC2918BB9200A55E6F /* CompanyDetails.swift */,
+				F07509CD2918BB9200A55E6F /* Data.swift */,
+				F07509CE2918BB9300A55E6F /* LoginResponse.swift */,
+				F07509CF2918BB9300A55E6F /* UserDetails.swift */,
+				F07509D72921617C00A55E6F /* TabBarModel.swift */,
+				F07509DF2921F32500A55E6F /* FinancesModel.swift */,
+				F09AB4E8292B1E00007F7A02 /* FinanceListModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +269,30 @@
 			dependencies = (
 			);
 			name = customTabBar;
+			packageProductDependencies = (
+				F0B2AAA029120CC20011A075 /* Alamofire */,
+			);
 			productName = customTabBar;
 			productReference = 1646A44025A9AAC800C6408A /* customTabBar.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F0B2AAA829120D830011A075 /* customTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B2AAAF29120D830011A075 /* Build configuration list for PBXNativeTarget "customTabBarTests" */;
+			buildPhases = (
+				F0B2AAA529120D830011A075 /* Sources */,
+				F0B2AAA629120D830011A075 /* Frameworks */,
+				F0B2AAA729120D830011A075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0B2AAAE29120D830011A075 /* PBXTargetDependency */,
+			);
+			name = customTabBarTests;
+			productName = customTabBarTests;
+			productReference = F0B2AAA929120D830011A075 /* customTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -120,11 +300,15 @@
 		1646A43825A9AAC800C6408A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					1646A43F25A9AAC800C6408A = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					F0B2AAA829120D830011A075 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 1646A43F25A9AAC800C6408A;
 					};
 				};
 			};
@@ -137,11 +321,15 @@
 				Base,
 			);
 			mainGroup = 1646A43725A9AAC800C6408A;
+			packageReferences = (
+				F0B2AA9F29120CC20011A075 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 1646A44125A9AAC800C6408A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1646A43F25A9AAC800C6408A /* customTabBar */,
+				F0B2AAA829120D830011A075 /* customTabBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,10 +339,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09AB4DD2925DD02007F7A02 /* TabBarView.xib in Resources */,
 				1646A45025A9AACA00C6408A /* LaunchScreen.storyboard in Resources */,
+				F07509E42923488C00A55E6F /* FinanceTableViewCell.xib in Resources */,
 				1646A44D25A9AACA00C6408A /* Assets.xcassets in Resources */,
-				F015EE3328F82ABE00986FE4 /* TabBarView.xib in Resources */,
 				1646A44B25A9AAC800C6408A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B2AAA729120D830011A075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,21 +361,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09AB4E9292B1E00007F7A02 /* FinanceListModel.swift in Sources */,
 				F015EE3F28F977B200986FE4 /* WellBeingViewController.swift in Sources */,
+				F07509E72925DB3300A55E6F /* FinanceViewController.swift in Sources */,
+				F0B2AAB7291213710011A075 /* FoodReviewApiClientProtocol.swift in Sources */,
+				F09AB4E5292B0CFD007F7A02 /* CustomTabBarViewModelProtocol.swift in Sources */,
+				F07509D32918BB9300A55E6F /* UserDetails.swift in Sources */,
+				F07509E02921F32500A55E6F /* FinancesModel.swift in Sources */,
+				F07509E32923488C00A55E6F /* FinanceTableViewCell.swift in Sources */,
 				1646A44825A9AAC800C6408A /* CustomTabBarViewController.swift in Sources */,
 				F015EE4128F977C600986FE4 /* WellBeingOneViewController.swift in Sources */,
+				F07509DC2921F0A000A55E6F /* BenefitTableViewCell.swift in Sources */,
+				F07509D12918BB9300A55E6F /* Data.swift in Sources */,
+				F09AB4E3292A969D007F7A02 /* FinanceViewModelProtocol.swift in Sources */,
+				F07509DA2921E0C700A55E6F /* CommonFunction.swift in Sources */,
+				F07509D22918BB9300A55E6F /* LoginResponse.swift in Sources */,
 				1646A44425A9AAC800C6408A /* AppDelegate.swift in Sources */,
+				F07509DE2921F15500A55E6F /* FinanceViewModel.swift in Sources */,
 				F015EE3B28F9778D00986FE4 /* BenefitViewController.swift in Sources */,
+				F07509D82921617D00A55E6F /* TabBarModel.swift in Sources */,
 				F015EE3728F924B700986FE4 /* TabBarView.swift in Sources */,
+				F07509D629213BEB00A55E6F /* CustomTabBarViewModel.swift in Sources */,
 				F015EE3928F9777900986FE4 /* HomeViewController.swift in Sources */,
 				F015EE4528FFC33200986FE4 /* Extensions.swift in Sources */,
 				1646A44625A9AAC800C6408A /* SceneDelegate.swift in Sources */,
 				F015EE3D28F977A500986FE4 /* WorkPlaceViewController.swift in Sources */,
 				F015EE4328F977D600986FE4 /* WellBeingTwoViewController.swift in Sources */,
+				F07509D02918BB9300A55E6F /* CompanyDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B2AAA529120D830011A075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B2AAAC29120D830011A075 /* customTabBarTests.swift in Sources */,
+				F09AB4DF2925E361007F7A02 /* FinanceViewModelTest.swift in Sources */,
+				F09AB4E7292B0F85007F7A02 /* MockCustomTabbarApiClient.swift in Sources */,
+				F0B2AAB4291212C60011A075 /* MockFoodReviewApiClient.swift in Sources */,
+				F09AB4E12925E92A007F7A02 /* MockFinanceViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0B2AAAE29120D830011A075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1646A43F25A9AAC800C6408A /* customTabBar */;
+			targetProxy = F0B2AAAD29120D830011A075 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1646A44925A9AAC800C6408A /* Main.storyboard */ = {
@@ -353,6 +585,44 @@
 			};
 			name = Release;
 		};
+		F0B2AAB029120D830011A075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.customTabBarTests.customTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/customTabBar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/customTabBar";
+			};
+			name = Debug;
+		};
+		F0B2AAB129120D830011A075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.customTabBarTests.customTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/customTabBar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/customTabBar";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,7 +644,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F0B2AAAF29120D830011A075 /* Build configuration list for PBXNativeTarget "customTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B2AAB029120D830011A075 /* Debug */,
+				F0B2AAB129120D830011A075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0B2AA9F29120CC20011A075 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0B2AAA029120CC20011A075 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0B2AA9F29120CC20011A075 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1646A43825A9AAC800C6408A /* Project object */;
 }

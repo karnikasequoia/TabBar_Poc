@@ -14,6 +14,26 @@ protocol TabBarViewProtocol {
 class TabBarView: UIScrollView, UITabBarDelegate {
     
     var tabBarDelegate: TabBarViewProtocol?
+    var tabList: [Page]? {
+        didSet {
+            for (index, value) in (tabList ?? []).enumerated() {
+                let item = UITabBarItem()
+                item.tag = index
+                item.image = UIImage(named: "workplaceTabBar.png")
+                if value.pageSlug.uppercased() == "DASHBOARD" {
+                    item.title = "HOME"
+                } else {
+                    item.title = value.pageSlug.uppercased()
+                }
+                tabBar.items?.append(item)
+            }
+            
+            if !(tabBar.items?.isEmpty ?? false) {
+                tabBar.selectedItem = tabBar.items?[0]
+            }
+            
+        }
+    }
     
     @IBOutlet weak var tabBar: UITabBar!  {
         didSet {
@@ -43,6 +63,7 @@ class TabBarView: UIScrollView, UITabBarDelegate {
     }
     
     fileprivate let _delegateProxy = _DelegateProxy()
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
