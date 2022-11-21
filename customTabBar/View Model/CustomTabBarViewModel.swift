@@ -21,7 +21,11 @@ class CustomTabBarViewModel: CustomTabBarApiClient {
                 completionHandler(true)
                 
                 let responseDict = response as? [String: AnyObject]
-                let modelObj = CommonFunctions.sharedInstance.convertJsonToModel(responseDict ?? [:], modelType: TabBarModel.self)
+                var modelObj = CommonFunctions.sharedInstance.convertJsonToModel(responseDict ?? [:], modelType: TabBarModel.self)
+                
+                let page = Page(actions: [], position: (modelObj?.data.pages.count ?? 0) + 1, pageSlug: "MORE", version: "", cbSites: CbSites(global: true, oneClick: "", oe: true, pir: true))
+                modelObj?.data.pages.append(page)
+                
                 if modelObj == nil {
                     completionHandler(false)
                 } else {

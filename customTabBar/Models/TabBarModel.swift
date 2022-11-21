@@ -8,7 +8,7 @@
 import Foundation
 
 struct TabBarModel: Codable {
-    let data: TabBarData
+    var data: TabBarData
     let message: String
     let success: Bool
 }
@@ -16,7 +16,7 @@ struct TabBarModel: Codable {
 // MARK: - DataClass
 struct TabBarData : Codable {
     let summary: Bool
-    let pages: [Page]
+    var pages: [Page]
     let manageGroups, adminExperience: Bool
     let employeeType: String
     let taxBalances: Bool

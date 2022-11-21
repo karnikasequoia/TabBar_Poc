@@ -121,7 +121,7 @@ extension CustomTabBarViewController: TabBarViewProtocol {
             childController = viewController
             add(viewController, frame: viewContainer.frame)
         case "RTW":
-            titleLabel.text = "Workplace"
+            titleLabel.text = "RTW"
             let viewController = mainStoryboard?.instantiateViewController(withIdentifier: "WorkPlaceViewController") as! WorkPlaceViewController
             childController = viewController
             add(viewController, frame: viewContainer.frame)
@@ -133,17 +133,15 @@ extension CustomTabBarViewController: TabBarViewProtocol {
             add(viewController, frame: viewContainer.frame)
             
         default:
-            titleLabel.text = "Wellbeing Two"
-            let viewController = mainStoryboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            titleLabel.text = "More"
+            let viewController = mainStoryboard?.instantiateViewController(withIdentifier: "WorkPlaceViewController") as! WorkPlaceViewController
             childController = viewController
             add(viewController, frame: viewContainer.frame)
         }
     }
 }
 
-class ActualFoodApiClent {
-    
-}
+class ActualFoodApiClent {}
 
 extension ActualFoodApiClent: FoodReviewApiClientProtocol {
     

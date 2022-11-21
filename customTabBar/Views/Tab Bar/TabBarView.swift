@@ -17,15 +17,7 @@ class TabBarView: UIScrollView, UITabBarDelegate {
     var tabList: [Page]? {
         didSet {
             for (index, value) in (tabList ?? []).enumerated() {
-                let item = UITabBarItem()
-                item.tag = index
-                item.image = UIImage(named: "workplaceTabBar.png")
-                if value.pageSlug.uppercased() == "DASHBOARD" {
-                    item.title = "HOME"
-                } else {
-                    item.title = value.pageSlug.uppercased()
-                }
-                tabBar.items?.append(item)
+                addTabBarItems(value: value, index: index)
             }
             
             if !(tabBar.items?.isEmpty ?? false) {
@@ -83,6 +75,18 @@ class TabBarView: UIScrollView, UITabBarDelegate {
         set {
             _delegateProxy._userDelegate = newValue
         }
+    }
+    
+    private func addTabBarItems(value: Page, index: Int) {
+        let item = UITabBarItem()
+        item.tag = index
+        item.image = UIImage(named: "workplaceTabBar.png")
+        if value.pageSlug.uppercased() == "DASHBOARD" {
+            item.title = "HOME"
+        } else {
+            item.title = value.pageSlug.uppercased()
+        }
+        tabBar.items?.append(item)
     }
     
     func didScroll() {
